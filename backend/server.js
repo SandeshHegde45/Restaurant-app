@@ -11,7 +11,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
     cors({
-        origin: [process.env.FRONTEND_URL, "https://restaurant-app-frontend-sigma.vercel.app"],
+        origin: ["https://restaurant-app-frontend-sigma.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true,
     })
@@ -25,7 +25,7 @@ app.use('/api/v1/reservation', reservationRouter);
 dbConnection();
 
 app.use(errorMiddleware);
-app.listen(process.env.PORT, () => {
+app.listen(4000, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
 });
 
