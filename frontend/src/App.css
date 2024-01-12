@@ -18,10 +18,10 @@ nav {
     z-index: 1000;
     background: palevioletred;
     display: flex;
-    width:100%;
+    width: 100%;
     max-width: 1500px;
     min-width: 1500px;
-    padding: 25px 10px 40px 10px;
+    padding: 0.5rem 0;
     margin-bottom: 25px;
     justify-content: space-between;
     position: fixed;
