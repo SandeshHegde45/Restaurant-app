@@ -17,7 +17,7 @@ const Reservation = () => {
     const handleReservation = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("https://restaurant-app-neon-five.vercel.app/api/v1/reservation/send",
+            const { data } = await axios.post("https://restaurant-app-backend-liard.vercel.app/api/v1/reservation/send",
                 {
                     firstName,
                     lastName,
