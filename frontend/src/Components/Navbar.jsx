@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { FaTimes } from 'react-icons/fa';
 import { data } from "../restApi.json"
 const Navbar = () => {
     const [show, setShow] = useState(false)
+    const toggleNavbar = () => {
+        setShow(!show);
+    };
     return (
         <nav>
             <div className="logo">Sandesh</div>
@@ -19,8 +23,8 @@ const Navbar = () => {
                 </div>
                 <button className="menuBtn">OUR MENU</button>
             </div>
-            <div className="hamburger" onClick={() => setShow(!show)}>
-                <GiHamburgerMenu />
+            <div className="hamburger" onClick={toggleNavbar}>
+                {show ? <FaTimes /> : <GiHamburgerMenu />}
             </div>
         </nav>
     )

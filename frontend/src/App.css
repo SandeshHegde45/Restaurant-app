@@ -15,16 +15,13 @@
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
 nav {
-    z-index: 1000;
-    background: palevioletred;
     display: flex;
-    width: 100%;
     max-width: 1500px;
     min-width: 1500px;
-    padding: 0.5rem 0;
+    padding: 25px 10px 40px 10px;
     margin-bottom: 25px;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     align-items: center;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -193,14 +190,12 @@ nav svg {
     background-size: cover;
     background-position: right;
     padding: 0 15px;
-    margin-top: 3rem;
 }
 
 .heroSection .container {
     display: flex;
     max-width: 1200px;
     min-width: 1200px;
-    margin-top: 1.5rem;
 }
 
 .heroSection .container .banner:first-child {
@@ -1046,7 +1041,7 @@ footer .container .banner .right {
     padding: 20px;
     box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
     -webkit-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
-    -moz-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+    -moz-box-shadow: -1px 0px 37px 0px rgba(115, 91, 129, 0.75);
 }
 
 .reservation .container .banner .reservation_form_box form div {
