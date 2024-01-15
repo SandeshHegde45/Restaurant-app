@@ -200,6 +200,7 @@ nav svg {
     display: flex;
     max-width: 1200px;
     min-width: 1200px;
+    margin-top: 1.5rem;
 }
 
 .heroSection .container .banner:first-child {
